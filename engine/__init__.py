@@ -1,0 +1,1 @@
+"""Bare-metal audio and neural synthesis package."""

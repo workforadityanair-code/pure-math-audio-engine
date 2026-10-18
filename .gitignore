@@ -1,0 +1,8 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.wav
+.vscode/
+dist/
+build/
+*.egg-info/

@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bare-metal-audio"
+version = "1.0.0"
+description = "Pure-math generative synthesizer, FFT analyzer, and 3D acoustics simulator"
+readme = "README.md"
+requires-python = ">=3.10"
+authors = [
+    { name = "Aditya Nair" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Topic :: Multimedia :: Sound/Audio :: Analysis",
+    "Topic :: Multimedia :: Sound/Audio :: Sound Synthesis",
+]
+dependencies = []
+
+[tool.setuptools.packages.find]
+include = ["engine*"]
