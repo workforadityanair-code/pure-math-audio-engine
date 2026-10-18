@@ -6,30 +6,6 @@ A bare-metal digital audio workstation, procedural music synthesizer, and physic
 
 ---
 
-## Architecture Overview
-[ Markov / Neural Counterpoint Engine ]
-│ (Note events & modal intervals)
-▼
-[ Multi-Voice Polyphonic Synthesizer ]
-├── Sine / Saw / Square / FM Wave Generators
-├── Exponential ADSR Envelope Engines
-└── Direct Form II Transposed Biquad Filters (IIR)
-│ (Raw PCM time series)
-▼
-[ 3D Image-Source Acoustic Ray Tracer ]
-└── Sparse Tapped-Delay Discrete Convolution
-│ (Spatialized wet/dry output)
-▼
-[ Radix-2 Cooley-Tukey FFT & Spectral Analyzer ]
-│ (Verification & ASCII terminal spectrogram)
-▼
-[ RIFF/WAVE 16-bit PCM Binary Serializer ]
-│
-▼
-output.wav
-
----
-
 ## Core Modules & Mathematical Foundations
 
 ### 1. Raw Audio Pipeline (`engine/wav_codec.py`)
